@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Ordinateur portable",
+        "unit_price": 999.99,
+        "quantity": 10,
+        "description": "Ordinateur portable puissant avec processeur rapide et grand écran."
+    },
+    {
+        "id": 2,
+        "name": "Smartphone",
+        "unit_price": 699.99,
+        "quantity": 20,
+        "description": "Smartphone dernier cri avec caméras haute résolution et écran OLED."
+    },
+    {
+        "id": 3,
+        "name": "Casque audio",
+        "unit_price": 149.99,
+        "quantity": 30,
+        "description": "Casque audio sans fil avec suppression active du bruit pour une qualité sonore exceptionnelle."
+    },
+    {
+        "id": 4,
+        "name": "Montre connectée",
+        "unit_price": 299.99,
+        "quantity": 15,
+        "description": "Montre connectée élégante avec suivi d'activité, notifications intelligentes et écran tactile."
+    },
+    {
+        "id": 5,
+        "name": "Enceinte Bluetooth",
+        "unit_price": 79.99,
+        "quantity": 25,
+        "description": "Enceinte Bluetooth portable avec une batterie longue durée et un son clair et puissant."
+    }
+]
