@@ -10,13 +10,13 @@ import Total from './Total.vue';
             billsProduct: [
                 {
                     name: "Ordinateur portable",
-                    unit_price: 999.99,
+                    unit_price: 550,
                     quantity: 10,
                     description: "Ordinateur portable puissant avec processeur rapide et grand écran.",
                 },
                 {
                     name: "Souris",
-                    unit_price: 49.99,
+                    unit_price: 50,
                     quantity: 5,
                     description: "Souris connectée à un clavier sans fil.",
                 }
