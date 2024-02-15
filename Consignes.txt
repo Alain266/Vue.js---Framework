@@ -1,0 +1,10 @@
+Poducts
+	Product
+		Stars
+
+Une props est une données reçu des parents, une props est unidirectionnelle (parents -> enfant)
+
+L'enfants reçois le props en camelcase (greetMeet), les données sont accessible qu'en lecture.
+L'adulte en kebab case ().
+
+Le html de Products doit venir de Product et la note de Product doit venir de Rating 

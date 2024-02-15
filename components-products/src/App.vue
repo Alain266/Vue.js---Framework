@@ -2,9 +2,6 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Product from "./components/Product.vue";
 import productData from "./data/product.json";
-
-
-
 </script>
 
 <template>
@@ -32,5 +29,3 @@ import productData from "./data/product.json";
     </p>
   </main>
 </template>
-
-<style scoped></style>
