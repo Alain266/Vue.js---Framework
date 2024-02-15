@@ -13,14 +13,12 @@ import Total from './Total.vue';
                     unit_price: 999.99,
                     quantity: 10,
                     description: "Ordinateur portable puissant avec processeur rapide et grand écran.",
-                    total: 1
                 },
                 {
                     name: "Souris",
                     unit_price: 49.99,
                     quantity: 5,
                     description: "Souris connectée à un clavier sans fil.",
-                    total: 1
                 }
             ]
         }

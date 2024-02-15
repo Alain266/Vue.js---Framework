@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Total from './Total.vue';
     export default {
         props: ['lineProps'],
         name: "BillLine",
-        methods: {
+        computed: {
             getTotalLine() {
             return this.lineProps.unit_price * this.lineProps.quantity
             }
         }
+        
     }
 </script>
 
@@ -17,7 +17,7 @@
         <div class="case">{{ lineProps.unit_price }}</div>
         <div class="case">{{ lineProps.quantity }}</div>
         <div class="case">{{ lineProps.description }}</div>
-        <div class="case">Total : {{ getTotalLine() }}</div>
+        <div class="case">Total : {{ getTotalLine }}</div>
     </div>
 </template>
 

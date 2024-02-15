@@ -6,4 +6,5 @@
 
 <template>
     <h1>Total</h1>
+    <p></p>
 </template>
