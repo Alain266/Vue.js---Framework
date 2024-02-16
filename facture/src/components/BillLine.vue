@@ -16,10 +16,10 @@
         <div class="case">
             <img src="../assets/add.png" class="addPicture">
         </div>
-        <div class="case"><label for="name">Name : </label>{{ lineProps.name }}<input v-model="lineProps.name"/></div>
-        <div class="case"><label for="unit_price">Unit price : </label>{{ lineProps.unit_price }}<input v-model="lineProps.unit_price"/></div>
-        <div class="case"><label for="quantity">Quantity : </label>{{ lineProps.quantity }}<input v-model="lineProps.quantity"/></div>
-        <div class="case"><label for="description">Description : </label>{{ lineProps.description }}<textarea v-model="lineProps.description"></textarea></div>
+        <div class="case"><label for="name">Name : </label>{{ lineProps.name }}</div><input v-model="lineProps.name"/>
+        <div class="case"><label for="unit_price">Unit price : </label>{{ lineProps.unit_price }}</div><input v-model="lineProps.unit_price"/>
+        <div class="case"><label for="quantity">Quantity : </label>{{ lineProps.quantity }}</div><input v-model="lineProps.quantity"/>
+        <div class="case"><label for="description">Description : </label>{{ lineProps.description }}</div><textarea v-model="lineProps.description" class="case"></textarea>
         <div class="case"><label for="total">Total : </label>{{ getTotalLine }}</div>
         <div class="case">
             <img src="../assets/supprimer.png" class="deletePicture">
@@ -29,16 +29,18 @@
 
 <style scoped>
     .div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         border: 1px solid black;
-        width: 100%;
+        width: 150%;
+        max-width: 500px;
     }
 
     .case {
         text-align: center;
         margin: 10px;
+        max-width: 96%;
     }
 
     .addPicture{
