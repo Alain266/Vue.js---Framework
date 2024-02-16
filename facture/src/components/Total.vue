@@ -5,6 +5,8 @@
 </script>
 
 <template>
-    <h1>Total</h1>
-    <p></p>
+    <h1>Total H.T :</h1>
 </template>
+
+<style scoped >
+</style>

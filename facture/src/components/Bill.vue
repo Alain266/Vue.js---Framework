@@ -10,12 +10,28 @@ import Total from './Total.vue';
             billsProduct: [
                 {
                     name: null,
-                    unit_price: null,
-                    quantity: null,
+                    unit_price: 1,
+                    quantity: 1,
+                    description: null,
+                },
+                {
+                    name: null,
+                    unit_price: 1,
+                    quantity: 1,
                     description: null,
                 },
             ],
-            Total: null,
+        }
+    },
+    methods: {
+        getTotal() {
+            let total = 0;
+            if (this.billsProduct !== null) {
+                for (let product of this.billsProduct) {
+                total += product.unit_price*product.quantity
+                }
+                return total
+            }
         }
     }
 }
@@ -25,11 +41,12 @@ import Total from './Total.vue';
     <h1> {{ facture }} </h1>
     <BillLine v-for="line in billsProduct" :lineProps="line" />
     <Total />
+    <p>{{ getTotal() }}</p>
 </template>
 
 <style>
     h1 {
-        text-align: center;
+        text-align: end;
         font-weight: bold;
     }
 </style>
