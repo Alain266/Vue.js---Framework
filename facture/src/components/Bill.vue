@@ -9,18 +9,13 @@ import Total from './Total.vue';
             facture: "Factures",
             billsProduct: [
                 {
-                    name: "Ordinateur portable",
-                    unit_price: 550,
-                    quantity: 10,
-                    description: "Ordinateur portable puissant avec processeur rapide et grand écran.",
+                    name: null,
+                    unit_price: null,
+                    quantity: null,
+                    description: null,
                 },
-                {
-                    name: "Souris",
-                    unit_price: 50,
-                    quantity: 5,
-                    description: "Souris connectée à un clavier sans fil.",
-                }
-            ]
+            ],
+            Total: null,
         }
     }
 }
