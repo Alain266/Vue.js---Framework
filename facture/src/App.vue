@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import Bill from './components/Bill.vue';
 </script>
 
 <template>
-  <header>
-  </header>
-
-  <main>
-    <Bill />
-  </main>
+  <div>
+    <header>
+      <nav>
+        <router-link :to="{name:'home'}">Accueil</router-link>
+        <router-link :to="{name:'about'}">A propos</router-link>
+        <router-link :to="{name:'bill'}">Factures</router-link>
+      </nav>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
 
 <style scoped>
@@ -23,4 +28,27 @@ main {
   gap: 20px;
   align-items: center;
 }
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+header nav a {
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color : rgb(90, 117, 255);
+}
+
+header nav a:active {
+  color : rgb(90, 117, 255);
+}
 </style>
+

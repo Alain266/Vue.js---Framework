@@ -14,12 +14,6 @@ import Total from './Total.vue';
                     quantity: 1,
                     description: null,
                 },
-                {
-                    name: null,
-                    unit_price: 1,
-                    quantity: 1,
-                    description: null,
-                },
             ],
         }
     },
@@ -33,9 +27,9 @@ import Total from './Total.vue';
                     });
                 },
 
-        handleDeleteLine () {
-            if (this.billsProduct.length > 1) {
-                this.billsProduct.pop();
+        handleDeleteLine (line:any) {
+            if (this.billsProduct.length >= 1) {
+                this.billsProduct.splice(this.billsProduct.indexOf(line), 1);
             }
         },
 
@@ -63,17 +57,26 @@ import Total from './Total.vue';
 </script>
 
 <template>
-    <h1> {{ facture }} </h1>
-    <BillLine v-for="line in billsProduct" :lineProps="line" @addLine="handleAddLine" @deleteLine="handleDeleteLine" />
-    <Total />
-    <p>{{ getTotalHT() }} $</p>
-    <h1>Total T.T.C (+20%) :</h1>
-    <p>{{ getTotalTTC() }} $</p>
+    <div class="bill">
+        <h1> {{ facture }} </h1>
+        <BillLine v-for="line in billsProduct" :lineProps="line" @addLine="handleAddLine" @deleteLine="handleDeleteLine(line)" /> 
+        <Total />
+        <p> {{ getTotalHT() }} $</p>
+        <h1>Total T.T.C (+20%) : </h1>
+        <p> {{ getTotalTTC() }} $</p>
+    </div>
 </template>
 
 <style>
-    h1 {
-        text-align: end;
+    h1, p {
+        margin: 50px;
+        font-size: 40px;
+        text-align: center;
         font-weight: bold;
     }
+
+    .bill {
+        text-align: center;
+    }
+    
 </style>

@@ -37,12 +37,11 @@
 
 <style scoped>
     .div {
+        margin: auto;
         display: flex;
         flex-direction: column;
         gap: 10px;
         border: 1px solid black;
-        width: 150%;
-        max-width: 500px;
     }
 
     .case {
